@@ -26,7 +26,7 @@ script de Java para convertir un archivo csv a una tabla de una base de datos de
 		bds.setPassword("root"); // contraseña
 		ds = bds;
 	```
-6. editar de manera proporcional el nombre de las columnas, como interrogaciones, como "preparedStatement.setString(1, values[0]);".
+6. editar de manera proporcional el nombre de las columnas, como interrogaciones, como preparedStatement.setString.
 	Si tu csv tiene 4 columnas, añadir el encabezado de cada columna, 4 interrogaciones, y 4 preparedStatement con su correspondiente valor ordenado.
 	```
 	while ((line = br.readLine()) != null) {
