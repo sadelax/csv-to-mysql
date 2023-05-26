@@ -13,8 +13,8 @@ import org.apache.commons.dbcp.BasicDataSource;
 
 public class CsvToMySql {
 
-	private static final String CSV_FILE = "/Cprog/cocktails.csv";
-	private static final String TABLE_NAME = "cocktails1fn";
+	private static final String CSV_FILE = "C:\\Users\\sandr\\git\\csv-to-mysql\\src\\main\\resources\\iba-cocktails-ingredients-web.csv";
+	private static final String TABLE_NAME = "iba_cocktails";
 
 	public static void main(String[] args) throws IOException, SQLException {
 		DataSource ds;
@@ -36,7 +36,7 @@ public class CsvToMySql {
 			String line;
 			while ((line = br.readLine()) != null) {
 				String[] values = line.split(",");
-				String sql = "INSERT INTO " + TABLE_NAME + " (Bebidas, Ingredientes, Ingredientes_por_bebida, Uso_ingrediente, Vasos, Preparaciones) VALUES (?, ?, ?, ?, ?, ?)";
+				String sql = "INSERT INTO " + TABLE_NAME + " (Category, Name, Ingredient_Direction, Quantity, Unit, Ingredient, Note) VALUES (?, ?, ?, ?, ?, ?, ?)";
 				preparedStatement = con.prepareStatement(sql);
 				preparedStatement.setString(1, values[0]);
 				preparedStatement.setString(2, values[1]);
@@ -44,6 +44,7 @@ public class CsvToMySql {
 				preparedStatement.setString(4, values[3]);
 				preparedStatement.setString(5, values[4]);
 				preparedStatement.setString(6, values[5]);
+				preparedStatement.setString(7, values[6]);
 				preparedStatement.executeUpdate();
 			}
 			
