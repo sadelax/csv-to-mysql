@@ -8,7 +8,7 @@ script de Java para convertir un archivo csv a una tabla de una base de datos de
 4. importar el fichero csv a main/resources.
 5. editar las siguientes líneas el fichero java CsvToMySql.java:
 ```
-private static final String CSV_FILE = "/resources/iba-cocktails-ingredients-web.csv"; // ruta del fichero csv a convertir
+private static final String CSV_FILE = "resources/iba-cocktails-ingredients-web.csv"; // ruta del fichero csv a convertir
 private static final String TABLE_NAME = "cocktails1fn"; // nombre de la tabla vacía de la base de datos
 ```
 ```
