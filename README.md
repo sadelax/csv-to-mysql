@@ -1,5 +1,5 @@
 # csv-to-mysql
-a Java script to import CSV data into MySQL database.
+script de Java para convertir un archivo csv a una tabla de una base de datos de MySQL.
 
 ## cómo hacer que funcione
 1. tener ya una base de datos creada, con al menos una tabla vacía con los encabezados correspondientes al csv.
