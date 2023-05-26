@@ -5,7 +5,7 @@ este script es útil para importar datos de un archivo CSV a una base de datos M
 
 ## requisitos previos
 1. jdk 8 o superior.
-2. drivers de mysql (incluidos en la carpeta resources) para agregarlas al classpath.
+2. drivers (incluidos en la carpeta resources) para agregarlos al classpath.
 3. mysql server.
 
 ## cómo hacer que funcione
