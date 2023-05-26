@@ -1,6 +1,11 @@
 # csv-to-mysql
 script de Java para convertir un archivo csv a una tabla de una base de datos de MySQL.
 
+## requisitos previos
+1. jdk 8 o superior.
+2. drivers de mysql (incluidos en la carpeta resources) para agregarlas al classpath.
+3. mysql server.
+
 ## cómo hacer que funcione
 1. tener ya una base de datos creada, con al menos una tabla vacía con los encabezados correspondientes al csv.
 2. dicha base de datos debe tener una columna id (int unsigned, NOT NULL, PRIMARY KEY, auto_increment).
