@@ -1,6 +1,8 @@
 # csv-to-mysql
 este script utiliza la biblioteca BasicDataSource de Apache Commons DBCP para configurar una conexión a la base de datos MySQL. Luego lee un archivo CSV y realiza inserciones en una tabla vacía de una base de datos ya existente.
+
 Si se produce algún error durante la ejecución, se imprimirá una traza de la excepción.
+
 Este script es útil para importar datos de un archivo CSV a una base de datos MySQL y se puede adaptar según los requisitos específicos del proyecto.
 
 ## requisitos previos
