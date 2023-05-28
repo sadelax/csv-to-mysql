@@ -28,7 +28,7 @@ Este script es útil para importar datos de un archivo CSV a una base de datos M
 		bds.setPassword("root"); // contraseña
 		ds = bds;
 	```
-6. editar de manera proporcional el nombre de las columnas, como `?`, `como preparedStatement.setString`
+6. editar de manera proporcional el nombre de las columnas, como `?`, como `preparedStatement.setString`
 	Si tu csv tiene 4 columnas, añadir el encabezado de cada columna, 4 interrogaciones, y 4 preparedStatement con su correspondiente valor ordenado.
 	```
 	while ((line = br.readLine()) != null) {
