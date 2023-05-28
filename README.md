@@ -1,7 +1,7 @@
 # csv-to-mysql
 este script utiliza la biblioteca BasicDataSource de Apache Commons DBCP para configurar una conexión a la base de datos MySQL. Luego lee un archivo CSV y realiza inserciones en una tabla vacía de una base de datos ya existente.
-si se produce algún error durante la ejecución, se imprimirá una traza de la excepción.
-este script es útil para importar datos de un archivo CSV a una base de datos MySQL y se puede adaptar según los requisitos específicos del proyecto.
+Si se produce algún error durante la ejecución, se imprimirá una traza de la excepción.
+Este script es útil para importar datos de un archivo CSV a una base de datos MySQL y se puede adaptar según los requisitos específicos del proyecto.
 
 ## requisitos previos
 1. jdk 8 o superior.
@@ -28,7 +28,7 @@ este script es útil para importar datos de un archivo CSV a una base de datos M
 		bds.setPassword("root"); // contraseña
 		ds = bds;
 	```
-6. editar de manera proporcional el nombre de las columnas, como interrogaciones, como preparedStatement.setString.
+6. editar de manera proporcional el nombre de las columnas, como `?`, `como preparedStatement.setString`
 	Si tu csv tiene 4 columnas, añadir el encabezado de cada columna, 4 interrogaciones, y 4 preparedStatement con su correspondiente valor ordenado.
 	```
 	while ((line = br.readLine()) != null) {
